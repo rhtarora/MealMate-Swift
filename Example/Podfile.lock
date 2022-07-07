@@ -1,0 +1,35 @@
+PODS:
+  - Alamofire (4.9.1)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - nutrition (0.1.0):
+    - Alamofire (~> 4.4)
+    - SwiftyJSON
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase (~> 2.1.4)
+  - nutrition (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FBSnapshotTestCase
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  nutrition:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  nutrition: 173cb91b51e74d1c56ab34a9222810d7ed4de34f
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 5e819b72e84aafff5c54afc67360f95708dc2707
+
+COCOAPODS: 1.11.3

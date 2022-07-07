@@ -1,0 +1,6 @@
+framework module nutrition {
+  umbrella header "nutrition-umbrella.h"
+
+  export *
+  module * { export * }
+}
