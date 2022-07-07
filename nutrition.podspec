@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'nutrition'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'nutrition pod is for POC of a algorithms.dependency, this pod will be updated letter.'
 
 # This description is used to generate tags and improve search results.
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/rhtarora/mealPod'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Rohit Arora' => 'rohit@charpixel.com' }
+  s.author           = { 'Rohit Arora' => 'upworktinesh@gmail.com' }
   s.source           = { :git => 'https://github.com/rhtarora/MealMate-Swift.git', :tag => s.version.to_s }
   
 
