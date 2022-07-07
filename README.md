@@ -22,7 +22,8 @@ pod 'nutrition'
 
 ## Author
 
-upworktinesh, upworktinesh@gmail.com
+Rohit Arora, rohit@charpixel.com 
+
 
 ## License
 
