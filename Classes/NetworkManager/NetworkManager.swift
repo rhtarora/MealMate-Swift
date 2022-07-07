@@ -76,9 +76,10 @@ public class NetworkManager {
                         })
                         print("History after Processing",data)
                         Completion(data,nil)
-                    }catch let error{
-                        Completion(nil,error)
                     }
+//                    catch let error{
+//                        Completion(nil,error)
+//                    }
                 }else{
                     print(response.result.error as Any)
                     Completion(nil,response.result.error)
