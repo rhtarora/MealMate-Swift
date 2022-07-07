@@ -49,17 +49,17 @@ class HistoryVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryCell", for: indexPath) as? HistoryCell else {
             return UITableViewCell.init()
         }
-        guard let data = tableData![indexPath.row] as? [String: Any] else { return UITableViewCell.init()}
-        cell.mealId.text = "\((data as! [String: Any])["mealId"]!)"
+        let data = tableData![indexPath.row]
+        cell.mealId.text = "\((data )["mealId"]!)"
         
         let jsonData = JSON(data).dictionary!
 //        let details = JSON(data).dictionary!["data"]
-        let details = JSON(jsonData["data"]).dictionary!
-        let date = JSON(details["date"]).stringValue
+        let details = JSON(jsonData["data"] as Any).dictionary!
+        let date = JSON(details["date"] as Any).stringValue
         cell.time.text = "\( getDate(from: date))"
-        cell.category.text = JSON(details["category"]).stringValue
+        cell.category.text = JSON(details["category"] as Any).stringValue
         var foodItem =  ""
-        JSON(details["foods"]).array?.forEach({ item in
+        JSON(details["foods"] as Any).array?.forEach({ item in
             let itemJSON = JSON(item).dictionary!
             foodItem += JSON(itemJSON["foodText"]!).stringValue + " "
         })

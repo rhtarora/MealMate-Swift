@@ -134,7 +134,7 @@ class ViewController: UIViewController {
             print("Log ID: \(String(describing: success.1))")
 
             cp.APIManager.ProcessData(mealId: (success.0?.toString())!, logID: (success.1?.toString())!, rawText: self.tagged_food_data[0], origText: self.TF.text!, user_id: cp.UserID!, already_tagged: "1") { reponse, error in
-                guard let reponse = reponse else {
+                guard reponse != nil else {
                     print(error as Any)
                     return
                 }
@@ -196,7 +196,7 @@ class ViewController: UIViewController {
             }
 
             // separate foods by | symbol, and foods and quants by tabs
-            if tagged_foods_quants.characters.count > 0 {
+            if tagged_foods_quants.count > 0 {
                 tagged_foods_quants += "|"
             }
             tagged_foods_quants += food_string+"\t"+quant_string

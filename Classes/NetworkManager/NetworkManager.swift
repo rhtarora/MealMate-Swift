@@ -37,7 +37,7 @@ public class NetworkManager {
             .responseJSON { response in
                 print(response)
                 if response.result.isSuccess{
-                    let userID = ((JSON(response.result.value).object as AnyObject).value(forKey:"userid")!)// JSON(response.result.value!).string!
+                    let userID = ((JSON(response.result.value as Any).object as AnyObject).value(forKey:"userid")!)
                     print(userID)
                     
                     UserDefaults.standard.setValue(userID, forKey: "userID")
@@ -58,7 +58,7 @@ public class NetworkManager {
                 print("History Response",response)
                 if response.result.isSuccess{
                     do{
-                        let jsonData = try JSON(response.result.value!).rawData(options: [])
+//                        let jsonData = try JSON(response.result.value!).rawData(options: [])
 //                        let mealHistory = try? JSONDecoder().decode(Dictionary<String,MealHistoryValue>.self, from: jsonData)
                         var data = [[String:Any]]()
 //                        mealHistory?.forEach { (key: String, value: MealHistoryValue) in
@@ -80,7 +80,7 @@ public class NetworkManager {
                         Completion(nil,error)
                     }
                 }else{
-                    print(response.result.error)
+                    print(response.result.error as Any)
                     Completion(nil,response.result.error)
                 }
                 
@@ -135,7 +135,7 @@ public class NetworkManager {
     func getLogID(for mealID: String,rawText:String,user_ID:String?,date:Date,Completion:@escaping(_ success:Int?,_ error: Error?)->()){
         let date : String = Helper.shared.getDate(date: date).addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
         let queries =  "\(mealID)&raw_text=\(rawText)&user_id=\(self.userID)&date=\(date)".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
-        var urlWithParameters = self.BASE_URL + "new_log?meal_id=" + queries!
+        let urlWithParameters = self.BASE_URL + "new_log?meal_id=" + queries!
         print("Get Log ID urlWithParameters : ",urlWithParameters)
         // get new meal ID
         Alamofire.request(urlWithParameters, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil)
@@ -187,10 +187,12 @@ public class NetworkManager {
             let orig_quant = hits![0][1].string
             let orig_num = n
             n += 1
-            let date = Helper.shared.getDate(date: Date())
+            //Date
+            _ = Helper.shared.getDate(date: Date())
             let foodText = dic!["foodText"]!.string
             let quantText = dic!["quantityText"]!.string
-            let userID = Nutrition.shared.UserID
+//            userID
+            _ = Nutrition.shared.UserID
             let unitArray = dic!["units"]?.array
 //            var top_n = ""
 //            unitArray!.forEach({ item in
@@ -209,7 +211,7 @@ public class NetworkManager {
 //            let query = q1 + q2 + q3 + q4 + q5
             
 //            self.addNewFood(query: query)
-            self.addNewF(mealId: mealId, logID: logId, id: orig_food_id!, unit: orig_quant!, quantity: "\(orig_num)", rowNum: "1", foodText: foodText!, quantText: quantText!, unitArray: unitArray!)
+            self.addNewF(mealId: meal_id, logID: log_id, id: orig_food_id!, unit: orig_quant!, quantity: "\(orig_num)", rowNum: "1", foodText: foodText!, quantText: quantText!, unitArray: unitArray!)
                 
         })
 
@@ -293,99 +295,4 @@ class Helper {
         return dateString
     }
 }
-extension Date {
-    
-    // returns string in "HH:MM AA" format, e.g. 12:47 PM
-//    func timeString() -> String {
-//        let formatter = DateFormatter()
-//        formatter.dateFormat = "hh:mm a"
-//        var string = formatter.string(from: self)
-//        if string[0] == "0" {
-//            string.remove(at: string.startIndex)
-//        }
-//        return string
-//    }
-    
-}
 
-
-/**
- {
- 
- let receivedData = KeyChain.load(key: "uuid")
- if (receivedData != nil) {
- self.uuid = String(data: receivedData!, encoding: .utf8)!
- } else {
- self.uuid = KeyChain.CreateUniqueID()
- let status = KeyChain.save(key: "uuid", data: KeyChain.stringToData(string: self.uuid))
- }
- 
- if debugMode == false {
- // add user to db (based on unique device id)
- let primaryURL = LanaAPI.shared.host + "/coco/api/v1.0/add_user?"
- let urlWithParameters = primaryURL + "user_id=" + self.uuid + "&name=" + Authentication.sharedInstance.name.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)! + "&date=" + getDate(date: Date()).addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)! + "&FBID=" + Authentication.sharedInstance.FBID + "&email=" + Authentication.sharedInstance.email
- print("add user to db urlWithParameters: ",urlWithParameters)
- Alamofire.request(urlWithParameters, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil).responseJSON(completionHandler: { response in
- print("add user to db response: ",response)
- if response.result.isSuccess {
- let userid = JSON(response.result.value!)["userid"].string!
- print("Newly added UserID: ", userid)
- self.uuid = userid
- 
- let status = KeyChain.save(key: "uuid", data: KeyChain.stringToData(string: self.uuid))
- // if no meals in Timeline, call server for existing meals to populate history
- if !MealManager.shared.hasRealMeals() {
- let primaryURL = LanaAPI.shared.host + "/coco/api/v1.0/get_meals?"
- let urlWithParameters = primaryURL + "user_id=" + LanaBot.shared.uuid
- print("Get meals urlWithParameters: ",urlWithParameters)
- Alamofire.request(urlWithParameters, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil).responseJSON(completionHandler: { response in
- print("Get meals response: ",response)
- if response.result.isSuccess {
- let result = JSON(response.result.value!)
- if result.count > 0 {
- for (mealID, json) in result {
- let parser = NewLanaLanguageProcessingParser()
- guard let meal = parser.parsedObjectFromJSON(json: json, mealID: Int(mealID)!) else {
- return
- }
- guard !meal.foodItems!.array.isEmpty else {
- MealManager.shared.deleteMeal(meal: meal, reset: true, serverDelete: true)
- return
- }
- meal.rawMealType = json["category"].string!
- let dateStr = json["date"].string!.components(separatedBy: "_")
- meal.date = self.makeDate(month:Int(dateStr[0])!, day:Int(dateStr[1])!, year:Int(dateStr[2])!, hr:Int(dateStr[3])!, min:Int(dateStr[4])!) as Date
- meal.mealID = Int64(mealID)!
- MealManager.shared.save()
- }
- 
- if LocalSettings.sharedInstance.hasSeenIntroMessage {
- LanaBot.shared.reset()
- }
- }
- } else {
- print(response.result)
- }
- })
- }
- }
- })
- }
- }
- */
-
-
-
-
-//        addNewFood urlWithParameters:  https://fuzzy-wuzzy.csail.mit.edu/Coco/coco/api/v1.0/new_food?
-//        meal_id=34564
-//        &log_id=2
-//        &orig_food_id=u09003
-//        &orig_quant=medium%20(3%22%20dia)
-//        &orig_num=1.0
-//        &row=4
-//        &date=6_3_2022_12_53
-//        &foodText=apple
-//        &quantText=1
-//        &user_id=65EBB3C9-2CD1-46A0-90BE-B35EFE4E3625
-//        &top_n=u09003%7Cu09004%7Cu09503%7Cu09501%7Cu09502%7Cu18431%7Cu09006%7Cu09504%7Cu09500%7Cu18944%7Cu09005%7Cu08263%7Cu14162%7Cu09010%7Cu09013
