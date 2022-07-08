@@ -1,0 +1,6 @@
+framework module Pods_MealMate_Swift_Example {
+  umbrella header "Pods-MealMate-Swift_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

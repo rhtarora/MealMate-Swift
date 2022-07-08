@@ -1,9 +1,9 @@
-# nutrition
+# MealMate-Swift
 
-[![CI Status](https://img.shields.io/travis/upworktinesh/nutrition.svg?style=flat)](https://travis-ci.org/upworktinesh/nutrition)
-[![Version](https://img.shields.io/cocoapods/v/nutrition.svg?style=flat)](https://cocoapods.org/pods/nutrition)
-[![License](https://img.shields.io/cocoapods/l/nutrition.svg?style=flat)](https://cocoapods.org/pods/nutrition)
-[![Platform](https://img.shields.io/cocoapods/p/nutrition.svg?style=flat)](https://cocoapods.org/pods/nutrition)
+[![CI Status](https://img.shields.io/travis/fullstackdevloper/MealMate-Swift.svg?style=flat)](https://travis-ci.org/fullstackdevloper/MealMate-Swift)
+[![Version](https://img.shields.io/cocoapods/v/MealMate-Swift.svg?style=flat)](https://cocoapods.org/pods/MealMate-Swift)
+[![License](https://img.shields.io/cocoapods/l/MealMate-Swift.svg?style=flat)](https://cocoapods.org/pods/MealMate-Swift)
+[![Platform](https://img.shields.io/cocoapods/p/MealMate-Swift.svg?style=flat)](https://cocoapods.org/pods/MealMate-Swift)
 
 ## Example
 
@@ -13,18 +13,17 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-nutrition is available through [CocoaPods](https://cocoapods.org). To install
+MealMate-Swift is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'nutrition'
+pod 'MealMate-Swift'
 ```
 
 ## Author
 
-Rohit Arora, rohit@charpixel.com 
-
+fullstackdevloper, ourdailywork@gmail.com
 
 ## License
 
-nutrition is available under the MIT license. See the LICENSE file for more info.
+MealMate-Swift is available under the MIT license. See the LICENSE file for more info.

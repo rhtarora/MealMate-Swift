@@ -1,6 +1,7 @@
+
 //
 //  MealsModel.swift
-//  cp_Example
+//  MealMate-Swift
 //
 //  Created by Macintosh on 16/05/22.
 //  Copyright © 2022 CocoaPods. All rights reserved.

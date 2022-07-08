@@ -252,7 +252,7 @@ public struct URLEncoding: ParameterEncoding {
 
         var escaped = ""
 
-        // ==========================================================================================================
+        //==========================================================================================================
         //
         //  Batching is required for escaping due to an internal bug in iOS 8.1 and 8.2. Encoding more than a few
         //  hundred Chinese characters causes various malloc error crashes. To avoid this issue until iOS 8 is no
@@ -261,7 +261,7 @@ public struct URLEncoding: ParameterEncoding {
         //
         //      - https://github.com/Alamofire/Alamofire/issues/206
         //
-        // ==========================================================================================================
+        //==========================================================================================================
 
         if #available(iOS 8.3, *) {
             escaped = string.addingPercentEncoding(withAllowedCharacters: allowedCharacterSet) ?? string
@@ -435,7 +435,8 @@ public struct PropertyListEncoding: ParameterEncoding {
     /// - returns: The new `PropertyListEncoding` instance.
     public init(
         format: PropertyListSerialization.PropertyListFormat = .xml,
-        options: PropertyListSerialization.WriteOptions = 0) {
+        options: PropertyListSerialization.WriteOptions = 0)
+    {
         self.format = format
         self.options = options
     }

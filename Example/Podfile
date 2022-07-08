@@ -1,13 +1,13 @@
 use_frameworks!
 
-platform :ios, '12.0'
+platform :ios, '10.0'
 
-target 'nutrition_Example' do
-  pod 'nutrition', :path => '../'
+target 'MealMate-Swift_Example' do
+  pod 'MealMate-Swift', :path => '../'
 
-  target 'nutrition_Tests' do
+  target 'MealMate-Swift_Tests' do
     inherit! :search_paths
 
-    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+    
   end
 end

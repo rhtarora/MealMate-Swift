@@ -1,0 +1,6 @@
+framework module MealMate_Swift {
+  umbrella header "MealMate-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

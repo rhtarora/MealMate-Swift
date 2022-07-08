@@ -1,12 +1,11 @@
+
 //
-//  LogID.swift
-//  cp_Example
+//  Tags+LogID+MealIdResponseModel.swift
+//  MealMate-Swift
 //
 //  Created by Macintosh on 18/05/22.
 //  Copyright © 2022 CocoaPods. All rights reserved.
 //
-
-
 
 import Foundation
 

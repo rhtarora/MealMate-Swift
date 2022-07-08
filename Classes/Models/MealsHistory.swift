@@ -1,6 +1,6 @@
 //
 //  MealsHistory.swift
-//  nutrition
+//  MealMate-Swift
 //
 //  Created by Macintosh on 02/06/22.
 //
@@ -20,7 +20,7 @@ public struct Food: Decodable {
     let units: [[String: [MHUnit]]]?
     let nutrition100_Gram: [MHNutrition100_Gram]?
     let funMessage: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case quantity, quantityText, foodText, hits, units
         case nutrition100_Gram = "nutrition_100_gram"
@@ -53,7 +53,7 @@ public struct MHNutrition100_Gram: Decodable {
     let totalPolyUnsatFatG, totalDietFiberG, vitaminB6Mg: Double?
     let foodID: String?
     let manganeseMg, totalTransFatG, calciumMg, totalFolateMcg: Int?
-
+    
     enum CodingKeys: String, CodingKey {
         case ironMg = "iron_mg"
         case vitaminB12Mcg = "vitamin_b12_mcg"
@@ -101,7 +101,7 @@ public struct MHNutrition100_Gram: Decodable {
 public struct MHUnit: Decodable {
     let unitDesc: String?
     let gramsPerUnit: Double?
-
+    
     enum CodingKeys: String, CodingKey {
         case unitDesc = "unit_desc"
         case gramsPerUnit = "grams_per_unit"

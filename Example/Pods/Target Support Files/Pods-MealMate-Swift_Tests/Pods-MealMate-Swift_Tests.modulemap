@@ -1,0 +1,6 @@
+framework module Pods_MealMate_Swift_Tests {
+  umbrella header "Pods-MealMate-Swift_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -226,18 +226,18 @@ open class MultipartFormData {
     public func append(_ fileURL: URL, withName name: String, fileName: String, mimeType: String) {
         let headers = contentHeaders(withName: name, fileName: fileName, mimeType: mimeType)
 
-        // ============================================================
+        //============================================================
         //                 Check 1 - is file URL?
-        // ============================================================
+        //============================================================
 
         guard fileURL.isFileURL else {
             setBodyPartError(withReason: .bodyPartURLInvalid(url: fileURL))
             return
         }
 
-        // ============================================================
+        //============================================================
         //              Check 2 - is file URL reachable?
-        // ============================================================
+        //============================================================
 
         do {
             let isReachable = try fileURL.checkPromisedItemIsReachable()
@@ -250,9 +250,9 @@ open class MultipartFormData {
             return
         }
 
-        // ============================================================
+        //============================================================
         //            Check 3 - is file URL a directory?
-        // ============================================================
+        //============================================================
 
         var isDirectory: ObjCBool = false
         let path = fileURL.path
@@ -262,9 +262,9 @@ open class MultipartFormData {
             return
         }
 
-        // ============================================================
+        //============================================================
         //          Check 4 - can the file size be extracted?
-        // ============================================================
+        //============================================================
 
         let bodyContentLength: UInt64
 
@@ -275,14 +275,15 @@ open class MultipartFormData {
             }
 
             bodyContentLength = fileSize.uint64Value
-        } catch {
+        }
+        catch {
             setBodyPartError(withReason: .bodyPartFileSizeQueryFailedWithError(forURL: fileURL, error: error))
             return
         }
 
-        // ============================================================
+        //============================================================
         //       Check 5 - can a stream be created from file URL?
-        // ============================================================
+        //============================================================
 
         guard let stream = InputStream(url: fileURL) else {
             setBodyPartError(withReason: .bodyPartInputStreamCreationFailed(for: fileURL))
@@ -311,7 +312,8 @@ open class MultipartFormData {
         withLength length: UInt64,
         name: String,
         fileName: String,
-        mimeType: String) {
+        mimeType: String)
+    {
         let headers = contentHeaders(withName: name, fileName: fileName, mimeType: mimeType)
         append(stream, withLength: length, headers: headers)
     }
