@@ -22,7 +22,7 @@ pod 'MealMate-Swift'
 
 ## Author
 
-fullstackdevloper, ourdailywork@gmail.com
+Rohit Arora, rohit@charpixel.com
 
 ## License
 
