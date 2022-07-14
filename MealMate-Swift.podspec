@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MealMate-Swift'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'MealMate-Swift pod is for POC of a algorithms.dependency, this pod will be updated letter.'
   
   # This description is used to generate tags and improve search results.
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   This is a demonstration for poc of a algotithm. This pod willbe updated letter now this is it's first commit.
   DESC
   
-  s.homepage         = 'https://github.com/fullstackdevloper/MealMate-Swift'
+  s.homepage         = 'https://github.com/rhtarora/MealMate-Swift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Rohit Arora' => 'rohit@charpixel.com' }
@@ -36,4 +36,5 @@ Pod::Spec.new do |s|
   }
   s.dependency 'Alamofire', '~> 4.4'
   s.dependency 'SwiftyJSON'
+  
 end

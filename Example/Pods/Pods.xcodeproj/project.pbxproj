@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111E110D01B65A84F6CC852F9A258411 /* MealsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F112B075A891B0ADA552AD7B8E0BEA1 /* MealsModel.swift */; };
 		119B37D7E7D3A59C6685FC0EFEE881CE /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58978579F2797C14A36C1911E91C0282 /* TaskDelegate.swift */; };
 		14E6B3E552DA97833576A80E38CCEA7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		2119BBBDD76C9B182007C9E8D3BD8DDA /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB01C375B82A347487A38C226650BF6 /* Timeline.swift */; };
-		33D4412ECD0AF242AA74ACD5D92F9BF8 /* MealsHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB774C749B255C0B0628324EB029AC2 /* MealsHistory.swift */; };
 		34B403EC1631F488260B18B3300ABD7D /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E65627F39AFF05DCD58C4508DBBC2F6A /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35BF4D273D5F1F6467F3148EE5D57190 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2629C650A54E95F075780F8EE7A5E573 /* SwiftyJSON-dummy.m */; };
 		3DE8AA12C52787A0BA570717BB27AAB0 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA42C169A72CBBA13B1F44C66C79BBE2 /* ServerTrustPolicy.swift */; };
@@ -18,32 +18,31 @@
 		4C301CCA81AAFB4453B6B827F846E0AC /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5596862E5F6C285875E4C761CC242 /* Validation.swift */; };
 		537D7452E6C8C82D9C1908EA29706E35 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DBD104E22E529CAB62CBABAD2FC544 /* Notifications.swift */; };
 		54B1C44B884141ED324A46BF4C95C429 /* Pods-MealMate-Swift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C0D5D2E3159A37FF17D22390881FF9A /* Pods-MealMate-Swift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A3E971B3989BC2143D72995D8D10DD2 /* Tags+LogID+MealIdResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ADE9986F78655910F9B1EE2B2CF57F /* Tags+LogID+MealIdResponseModel.swift */; };
 		5CECD168465CF59B489253695D3FB51F /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F38497C58C70B1462302894244E0D /* NetworkReachabilityManager.swift */; };
-		5EE38CE8CB9D92AB6BF74A48C51D4C89 /* MealMate-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D816F9E538D238690E59A83613518858 /* MealMate-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EE38CE8CB9D92AB6BF74A48C51D4C89 /* MealMate-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC3579B81E4AA16E00AA5358998FF244 /* MealMate-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65C3406E3A84AEE580AE5B1F3424D7FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		65F975153151ECD89717D72264B6D6C5 /* Tags+LogID+MealIdResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71E609824F99EEFA9A09F67DDA0A1F3 /* Tags+LogID+MealIdResponseModel.swift */; };
 		6D0464BDCD6CE52FE613303A5558DE30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		6DF154F51210D4C446AA021F2DBA34A4 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3331DD8412588D1EDB761D7BF7EEFEFF /* MultipartFormData.swift */; };
 		70EA6F068498CEC1B273D6BB1E74EB4E /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58C4C551F3916E894D0D0EB71BC64D /* Alamofire.swift */; };
-		7A96724BE317FC265B0D27ECBCBB9D71 /* ProcessResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8041A500C293016E24E9349DE90A911 /* ProcessResponseModel.swift */; };
 		8023EECE8437F0311A065A9C2F420E2E /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2F2841B79C58BA9BBB1F6C89FE3D2F /* SessionManager.swift */; };
 		85379CCF081FC9C36F082E71D2DF4D2F /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084BA8F5AE20483E02B6D9CC0C2C163B /* SessionDelegate.swift */; };
-		85848AD2A49D2A9A5F2B51986D9A7673 /* MealMate-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA7E157E922CA4EAEBFE8214028E852 /* MealMate-Swift-dummy.m */; };
+		8DF170B4746E30D67FA9FE46BFCD8A70 /* MealMate.Swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B6B39D8306F0E083CD81F4E80BC0BE /* MealMate.Swift */; };
 		90E42B43904F2F22CA3A8BBD0155D9A2 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EAE3BE5FE57DED14A26D1B40956132 /* AFError.swift */; };
 		9146510540C8DAF109CC4BCCB0CA74A9 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75163746EBCC52B719EFEA55971C42D6 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9BCBBFE03318F5DD172F9E1F3100F67B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDE598A771C7D401D1A4E5FF6BF2D4F /* Response.swift */; };
-		A2C1383809DC45735953F897A608E0EC /* MealMate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C067009C0DA07BC3B5107C6B7946840B /* MealMate.swift */; };
+		A575354B60A615B6C25643EEFCC655F3 /* MealMate-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D469B56DDB60149B4C46C9BC1DC0D8 /* MealMate-Swift-dummy.m */; };
 		AB627360FC7D6B7EE8DA291A2EFD21A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		BE5D6E4B461548A2E74221353787E20D /* MealsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBDDA596054AFAD141B1648263252F2 /* MealsModel.swift */; };
+		B86DD4F7DF3E39330C57169E610DDEB1 /* MealsHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA02DBC8D8D0BEFD39474796438E1BBB /* MealsHistory.swift */; };
 		C06FD1BF4EE20598980B8BB4C46BF1F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		C27C72B2D755F3A7B2D97089CA75146F /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7CCCD030593EB43A8AD9CA147F7095 /* Alamofire-dummy.m */; };
 		CC17014A73D0112A68283EACA2705402 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BACB35151AA767B49216D2A232A965A /* SwiftyJSON.swift */; };
 		CD7C53F47674FF2A9961CD8D7BEA350E /* Pods-MealMate-Swift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DF9984DBC6042CEFBFD3A2FEA953D4 /* Pods-MealMate-Swift_Example-dummy.m */; };
 		D46CB5AF7BE345C5D27ABF9DCF692881 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4BF55AB3F6EAEB19B8653795645C00 /* Result.swift */; };
 		D593E5BEB4221FF272DBF69E51945319 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C10FCAF1E882CD8BEA421D005B4914 /* Request.swift */; };
-		E2B466D32877F4DE00D874FD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B466D12877F4DE00D874FD /* NetworkManager.swift */; };
 		E8B389CF6569E41BD03D5220289E542E /* Pods-MealMate-Swift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C59120A883CB5DA75975702D7807C2FA /* Pods-MealMate-Swift_Tests-dummy.m */; };
 		F3B7523446E660D4EE39A6908C338E8F /* Pods-MealMate-Swift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CAD4C8CE69906D5360090D94B515511C /* Pods-MealMate-Swift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F57A4132925C514A6C7EB3E5A3DF6E88 /* ProcessResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D54321D9A04BFAA489E3A35560C0AA /* ProcessResponseModel.swift */; };
 		F5C92DC8E274C4FC541267A97575BC05 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251FF376052201C055F5701EC94DA144 /* ParameterEncoding.swift */; };
 		F93AEAF3659818E2308E0E5C70B66423 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF150D96E0A35607C88357A20E4E9A /* DispatchQueue+Alamofire.swift */; };
 /* End PBXBuildFile section */
@@ -98,22 +97,24 @@
 		03ADFD81EBB96A99066C2581501B4ED7 /* Pods-MealMate-Swift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MealMate-Swift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		040F38497C58C70B1462302894244E0D /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		084BA8F5AE20483E02B6D9CC0C2C163B /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		08D54321D9A04BFAA489E3A35560C0AA /* ProcessResponseModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProcessResponseModel.swift; sourceTree = "<group>"; };
+		0F112B075A891B0ADA552AD7B8E0BEA1 /* MealsModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MealsModel.swift; sourceTree = "<group>"; };
 		1368E857810E755750911E1E7DD57165 /* Pods-MealMate-Swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MealMate-Swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		152921CE9DFCCBD17A5DD9C618C7B874 /* Pods-MealMate-Swift_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MealMate-Swift_Example"; path = Pods_MealMate_Swift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B7D4D7AD104C1EB5D3116E11184F70D /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		1D5D62F635561C9716467EA766052B21 /* MealMate-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MealMate-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		222764C606D78C6AC06331885DB2385C /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		251FF376052201C055F5701EC94DA144 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		2629C650A54E95F075780F8EE7A5E573 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		2690288412BDC600E564ECEEDE48F6B7 /* Pods-MealMate-Swift_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MealMate-Swift_Tests"; path = Pods_MealMate_Swift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B71EAA6E32EE7680E85296917C216F /* Pods-MealMate-Swift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MealMate-Swift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		28668DAE5872C110A1FAA8F1D149B186 /* Pods-MealMate-Swift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MealMate-Swift_Tests.modulemap"; sourceTree = "<group>"; };
-		28FA4A123528C52C4ECEA561C28D2A72 /* MealMate-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MealMate-Swift-Info.plist"; sourceTree = "<group>"; };
 		2D4BF55AB3F6EAEB19B8653795645C00 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		2DB01C375B82A347487A38C226650BF6 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		3331DD8412588D1EDB761D7BF7EEFEFF /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		3B3B0B372A0CC63DF789FC167C3B027A /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		3CDE598A771C7D401D1A4E5FF6BF2D4F /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		4EBDDA596054AFAD141B1648263252F2 /* MealsModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MealsModel.swift; sourceTree = "<group>"; };
+		40BFF18DEE6D6492B35A32E7165DBA82 /* MealMate-Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "MealMate-Swift.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		536A365453AE2CA20A4A343DF67F77EA /* SwiftyJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.release.xcconfig; sourceTree = "<group>"; };
 		54C10FCAF1E882CD8BEA421D005B4914 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		58978579F2797C14A36C1911E91C0282 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
@@ -124,47 +125,44 @@
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		75163746EBCC52B719EFEA55971C42D6 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		75ED63F6B548B5CE430F7207E88221E7 /* Pods-MealMate-Swift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MealMate-Swift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7D67F8CB0E4322DB9A2245CBC82D603B /* MealMate-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MealMate-Swift.release.xcconfig"; sourceTree = "<group>"; };
-		86646A233F1032434F324BA72801EEA8 /* MealMate-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "MealMate-Swift.modulemap"; sourceTree = "<group>"; };
+		851EDAF4F15893D1177DE91B90F6C2EE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		85B6B39D8306F0E083CD81F4E80BC0BE /* MealMate.Swift */ = {isa = PBXFileReference; includeInIndex = 1; name = MealMate.Swift; path = Classes/MealMate.Swift; sourceTree = "<group>"; };
 		87EAE3BE5FE57DED14A26D1B40956132 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		884732D03E0660AFBF8D882402C86952 /* SwiftyJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.debug.xcconfig; sourceTree = "<group>"; };
 		885D1026E128BA450DAC163E79EA6293 /* Pods-MealMate-Swift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MealMate-Swift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		89D3507189CB944611520E4B042C524C /* Pods-MealMate-Swift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MealMate-Swift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8BACB35151AA767B49216D2A232A965A /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
 		8C0D5D2E3159A37FF17D22390881FF9A /* Pods-MealMate-Swift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MealMate-Swift_Tests-umbrella.h"; sourceTree = "<group>"; };
-		8CA7E157E922CA4EAEBFE8214028E852 /* MealMate-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MealMate-Swift-dummy.m"; sourceTree = "<group>"; };
-		91038661405A8BF7C73F3F33C1083003 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		93DBD104E22E529CAB62CBABAD2FC544 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		96D8BA8AACD46EF1197DCBB66A4BC636 /* Pods-MealMate-Swift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MealMate-Swift_Example-frameworks.sh"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3427A08220A7A771590CC6B2C59C27F /* Pods-MealMate-Swift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MealMate-Swift_Example.modulemap"; sourceTree = "<group>"; };
+		A9D01BF49A2CD98B5554F62A01270EFA /* MealMate-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MealMate-Swift-Info.plist"; sourceTree = "<group>"; };
+		AA02DBC8D8D0BEFD39474796438E1BBB /* MealsHistory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MealsHistory.swift; sourceTree = "<group>"; };
 		AADF150D96E0A35607C88357A20E4E9A /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		AE58C4C551F3916E894D0D0EB71BC64D /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		AEC5596862E5F6C285875E4C761CC242 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		B135D70246DB91C8963F9CB7C02D5073 /* MealMate-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MealMate-Swift-prefix.pch"; sourceTree = "<group>"; };
 		B4DCF2F596B004A93871417A24A29039 /* Pods-MealMate-Swift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MealMate-Swift_Tests-Info.plist"; sourceTree = "<group>"; };
-		BC943D6C3BAA48E1D2DD2A83B5472023 /* MealMate-Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "MealMate-Swift.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C067009C0DA07BC3B5107C6B7946840B /* MealMate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MealMate.swift; path = Classes/MealMate.swift; sourceTree = "<group>"; };
+		BC3579B81E4AA16E00AA5358998FF244 /* MealMate-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MealMate-Swift-umbrella.h"; sourceTree = "<group>"; };
+		C3C768F31FFD6F8BB56B7A08A154E9B3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		C59120A883CB5DA75975702D7807C2FA /* Pods-MealMate-Swift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MealMate-Swift_Tests-dummy.m"; sourceTree = "<group>"; };
 		C5E1EDC657363E0794C512E36A5BBE0F /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
-		C8041A500C293016E24E9349DE90A911 /* ProcessResponseModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProcessResponseModel.swift; sourceTree = "<group>"; };
+		C73135215703A11FAB6A81FDCCADEC87 /* MealMate-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "MealMate-Swift.modulemap"; sourceTree = "<group>"; };
 		CA42C169A72CBBA13B1F44C66C79BBE2 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		CAD4C8CE69906D5360090D94B515511C /* Pods-MealMate-Swift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MealMate-Swift_Example-umbrella.h"; sourceTree = "<group>"; };
 		CC2F2841B79C58BA9BBB1F6C89FE3D2F /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		CEB774C749B255C0B0628324EB029AC2 /* MealsHistory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MealsHistory.swift; sourceTree = "<group>"; };
-		D0ADE9986F78655910F9B1EE2B2CF57F /* Tags+LogID+MealIdResponseModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Tags+LogID+MealIdResponseModel.swift"; sourceTree = "<group>"; };
-		D17C9D3742FB318767A665F1D0A69175 /* MealMate-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MealMate-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		D5ABE01FC99CD9FBC0BBC1D0B85611FA /* MealMate-Swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "MealMate-Swift"; path = MealMate_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D816F9E538D238690E59A83613518858 /* MealMate-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MealMate-Swift-umbrella.h"; sourceTree = "<group>"; };
+		D5E3CD2D81942138F167D74F9E09D633 /* MealMate-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MealMate-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		D71E609824F99EEFA9A09F67DDA0A1F3 /* Tags+LogID+MealIdResponseModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Tags+LogID+MealIdResponseModel.swift"; sourceTree = "<group>"; };
+		D7D469B56DDB60149B4C46C9BC1DC0D8 /* MealMate-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MealMate-Swift-dummy.m"; sourceTree = "<group>"; };
 		D9100CDAF60BC2660BA9542AB72E6D47 /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
 		DA7CCCD030593EB43A8AD9CA147F7095 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		DA8A0369218FD1039C1BD3B03C36BE6C /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
 		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2B466D12877F4DE00D874FD /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E65627F39AFF05DCD58C4508DBBC2F6A /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		E73ABB27B8BE27B1E34ECD3C359CF99D /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		E816D541FED45AAF3DB72E6D96DCC67E /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		E819AB14B933C80D1A302EB73667AB85 /* MealMate-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MealMate-Swift-prefix.pch"; sourceTree = "<group>"; };
-		F33E1465417A2FD69CCD5B355EB82BA1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F7DF9984DBC6042CEFBFD3A2FEA953D4 /* Pods-MealMate-Swift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MealMate-Swift_Example-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -249,6 +247,7 @@
 				AEC5596862E5F6C285875E4C761CC242 /* Validation.swift */,
 				04AC57368ED834E6433AC99341075264 /* Support Files */,
 			);
+			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -277,18 +276,6 @@
 				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		452602EB40FD7CC0DA38E19406558C3D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				CEB774C749B255C0B0628324EB029AC2 /* MealsHistory.swift */,
-				4EBDDA596054AFAD141B1648263252F2 /* MealsModel.swift */,
-				C8041A500C293016E24E9349DE90A911 /* ProcessResponseModel.swift */,
-				D0ADE9986F78655910F9B1EE2B2CF57F /* Tags+LogID+MealIdResponseModel.swift */,
-			);
-			name = Models;
-			path = Classes/Models;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -320,9 +307,21 @@
 		84B187D57C5DA7F6804E6C209E5993AC /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A8084CEFB103CAA187413F1EA7B6A4BC /* MealMate-Swift */,
+				851549D51CA039119EA8C75D51D63BA9 /* MealMate-Swift */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		851549D51CA039119EA8C75D51D63BA9 /* MealMate-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				85B6B39D8306F0E083CD81F4E80BC0BE /* MealMate.Swift */,
+				A5CA456DE817525D5D94F0050CBEA0EB /* Models */,
+				C1077320E7505581DFE2FF52DDF394A1 /* Pod */,
+				8A07ADCAE43820FD0DA84C24190A8C8D /* Support Files */,
+			);
+			name = "MealMate-Swift";
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		854405E07A91836CE190E122C79D6817 /* Pods-MealMate-Swift_Tests */ = {
@@ -341,51 +340,51 @@
 			path = "Target Support Files/Pods-MealMate-Swift_Tests";
 			sourceTree = "<group>";
 		};
+		8A07ADCAE43820FD0DA84C24190A8C8D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C73135215703A11FAB6A81FDCCADEC87 /* MealMate-Swift.modulemap */,
+				D7D469B56DDB60149B4C46C9BC1DC0D8 /* MealMate-Swift-dummy.m */,
+				A9D01BF49A2CD98B5554F62A01270EFA /* MealMate-Swift-Info.plist */,
+				B135D70246DB91C8963F9CB7C02D5073 /* MealMate-Swift-prefix.pch */,
+				BC3579B81E4AA16E00AA5358998FF244 /* MealMate-Swift-umbrella.h */,
+				1D5D62F635561C9716467EA766052B21 /* MealMate-Swift.debug.xcconfig */,
+				D5E3CD2D81942138F167D74F9E09D633 /* MealMate-Swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MealMate-Swift";
+			sourceTree = "<group>";
+		};
 		A38AF6036EC2A3CE69C9D982FB859C80 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
 				8BACB35151AA767B49216D2A232A965A /* SwiftyJSON.swift */,
 				0A93AF1599E6731ECE3D7B04DC2605AC /* Support Files */,
 			);
+			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
-		A8084CEFB103CAA187413F1EA7B6A4BC /* MealMate-Swift */ = {
+		A5CA456DE817525D5D94F0050CBEA0EB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E2B466D02877F4DE00D874FD /* NetworkManager */,
-				C067009C0DA07BC3B5107C6B7946840B /* MealMate.swift */,
-				452602EB40FD7CC0DA38E19406558C3D /* Models */,
-				B5DAB9032539C5F1C4A95FE6AA54CD98 /* Pod */,
-				B60BA18A0F496247A0BD85F72BBB541F /* Support Files */,
+				AA02DBC8D8D0BEFD39474796438E1BBB /* MealsHistory.swift */,
+				0F112B075A891B0ADA552AD7B8E0BEA1 /* MealsModel.swift */,
+				08D54321D9A04BFAA489E3A35560C0AA /* ProcessResponseModel.swift */,
+				D71E609824F99EEFA9A09F67DDA0A1F3 /* Tags+LogID+MealIdResponseModel.swift */,
 			);
-			name = "MealMate-Swift";
-			path = ../..;
+			name = Models;
+			path = Classes/Models;
 			sourceTree = "<group>";
 		};
-		B5DAB9032539C5F1C4A95FE6AA54CD98 /* Pod */ = {
+		C1077320E7505581DFE2FF52DDF394A1 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				F33E1465417A2FD69CCD5B355EB82BA1 /* LICENSE */,
-				BC943D6C3BAA48E1D2DD2A83B5472023 /* MealMate-Swift.podspec */,
-				91038661405A8BF7C73F3F33C1083003 /* README.md */,
+				C3C768F31FFD6F8BB56B7A08A154E9B3 /* LICENSE */,
+				40BFF18DEE6D6492B35A32E7165DBA82 /* MealMate-Swift.podspec */,
+				851EDAF4F15893D1177DE91B90F6C2EE /* README.md */,
 			);
 			name = Pod;
-			sourceTree = "<group>";
-		};
-		B60BA18A0F496247A0BD85F72BBB541F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				86646A233F1032434F324BA72801EEA8 /* MealMate-Swift.modulemap */,
-				8CA7E157E922CA4EAEBFE8214028E852 /* MealMate-Swift-dummy.m */,
-				28FA4A123528C52C4ECEA561C28D2A72 /* MealMate-Swift-Info.plist */,
-				E819AB14B933C80D1A302EB73667AB85 /* MealMate-Swift-prefix.pch */,
-				D816F9E538D238690E59A83613518858 /* MealMate-Swift-umbrella.h */,
-				D17C9D3742FB318767A665F1D0A69175 /* MealMate-Swift.debug.xcconfig */,
-				7D67F8CB0E4322DB9A2245CBC82D603B /* MealMate-Swift.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MealMate-Swift";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -406,14 +405,6 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E2B466D02877F4DE00D874FD /* NetworkManager */ = {
-			isa = PBXGroup;
-			children = (
-				E2B466D12877F4DE00D874FD /* NetworkManager.swift */,
-			);
-			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 		F3B5706E2E7CECCE4834789D23D1F5C7 /* Pods-MealMate-Swift_Example */ = {
@@ -503,7 +494,7 @@
 			buildConfigurationList = 157652BAE808BC782177591FD1827166 /* Build configuration list for PBXNativeTarget "MealMate-Swift" */;
 			buildPhases = (
 				00C8447A732C412473633A292C98F059 /* Headers */,
-				4C77EE99B24244A1C0434FBB2718A90D /* Sources */,
+				9ABB590F21412D5B01EB117E785A5F9B /* Sources */,
 				D1354F49206B249ED3AA8F2119A58ECD /* Frameworks */,
 				AEEC23796972D18CD5B9563BBFEDEDD5 /* Resources */,
 			);
@@ -661,20 +652,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C77EE99B24244A1C0434FBB2718A90D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A2C1383809DC45735953F897A608E0EC /* MealMate.swift in Sources */,
-				85848AD2A49D2A9A5F2B51986D9A7673 /* MealMate-Swift-dummy.m in Sources */,
-				33D4412ECD0AF242AA74ACD5D92F9BF8 /* MealsHistory.swift in Sources */,
-				E2B466D32877F4DE00D874FD /* NetworkManager.swift in Sources */,
-				BE5D6E4B461548A2E74221353787E20D /* MealsModel.swift in Sources */,
-				7A96724BE317FC265B0D27ECBCBB9D71 /* ProcessResponseModel.swift in Sources */,
-				5A3E971B3989BC2143D72995D8D10DD2 /* Tags+LogID+MealIdResponseModel.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		68AED8E940510D7774A343E9D382C7A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -706,6 +683,19 @@
 				119B37D7E7D3A59C6685FC0EFEE881CE /* TaskDelegate.swift in Sources */,
 				2119BBBDD76C9B182007C9E8D3BD8DDA /* Timeline.swift in Sources */,
 				4C301CCA81AAFB4453B6B827F846E0AC /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ABB590F21412D5B01EB117E785A5F9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DF170B4746E30D67FA9FE46BFCD8A70 /* MealMate.Swift in Sources */,
+				A575354B60A615B6C25643EEFCC655F3 /* MealMate-Swift-dummy.m in Sources */,
+				B86DD4F7DF3E39330C57169E610DDEB1 /* MealsHistory.swift in Sources */,
+				111E110D01B65A84F6CC852F9A258411 /* MealsModel.swift in Sources */,
+				F57A4132925C514A6C7EB3E5A3DF6E88 /* ProcessResponseModel.swift in Sources */,
+				65F975153151ECD89717D72264B6D6C5 /* Tags+LogID+MealIdResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -786,7 +776,7 @@
 		};
 		3E568D5CFD97B9FFC34857A1AEC6B0B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D17C9D3742FB318767A665F1D0A69175 /* MealMate-Swift.debug.xcconfig */;
+			baseConfigurationReference = 1D5D62F635561C9716467EA766052B21 /* MealMate-Swift.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -847,7 +837,7 @@
 		};
 		7CE55FC98779B5DED3C35C89E52FDD1B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D67F8CB0E4322DB9A2245CBC82D603B /* MealMate-Swift.release.xcconfig */;
+			baseConfigurationReference = D5E3CD2D81942138F167D74F9E09D633 /* MealMate-Swift.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -931,7 +921,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
