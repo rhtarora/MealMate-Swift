@@ -144,19 +144,36 @@ class ViewController: UIViewController {
         }
     }
     
-    // MARK: - Get Tags to show from Get Tags API
+   // MARK: - Get Tags to show from Get Tags API
     func gettagss(json: [JSON]) {
         var tg  = ""
         self.tagged_food_data = self.processTags(json)
-        json.forEach { j in
-            tg += "\(j["Quant"][0]) \(j["Food"][0]),"
-        }
+		json.forEach { jsonItem in
+				//            tg += "\(jsonItem["Quant"][0]) \(jsonItem["Food"][0]),"
+			tg += "\(getQuantity(from: jsonItem)) \(getfood(from: jsonItem)) "
+		}
+		print("Tags--->>>",tg)
         self.tagsList.text = tg
         print(json)
-        
+
         self.getMealID()
     }
-    
+	
+	func getQuantity(from item:JSON)->String{
+		var quant = ""
+		item["Quant"].forEach { item in
+			quant += item.1.rawString()! + " "
+		}
+		return quant
+	}
+	
+	func getfood(from item:JSON)->String{
+		var food = ""
+		item["Food"].forEach { item in
+			food += item.1.rawString()!
+		}
+		return food
+	}
     
     func processTags(_ foodList: [JSON]) -> [String] {
         var res = "Got it! You had:"
