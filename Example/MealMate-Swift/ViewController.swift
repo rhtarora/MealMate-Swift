@@ -150,7 +150,7 @@ class ViewController: UIViewController {
         self.tagged_food_data = self.processTags(json)
 		json.forEach { jsonItem in
 				//            tg += "\(jsonItem["Quant"][0]) \(jsonItem["Food"][0]),"
-			tg += "\(getQuantity(from: jsonItem)) \(getfood(from: jsonItem)) "
+			tg += "\(getQuantity(from: jsonItem))\(getfood(from: jsonItem)) "
 		}
 		print("Tags--->>>",tg)
         self.tagsList.text = tg
@@ -170,7 +170,7 @@ class ViewController: UIViewController {
 	func getfood(from item:JSON)->String{
 		var food = ""
 		item["Food"].forEach { item in
-			food += item.1.rawString()!
+			food += item.1.rawString()! + " "
 		}
 		return food
 	}
