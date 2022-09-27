@@ -147,12 +147,14 @@ class ViewController: UIViewController {
    // MARK: - Get Tags to show from Get Tags API
     func gettagss(json: [JSON]) {
         var tg  = ""
+	var tags : [String] = []
         self.tagged_food_data = self.processTags(json)
 		json.forEach { jsonItem in
 				//            tg += "\(jsonItem["Quant"][0]) \(jsonItem["Food"][0]),"
-			tg += "\(getQuantity(from: jsonItem))\(getfood(from: jsonItem)) "
+			tags.append("\(getQuantity(from: jsonItem)) \(getfood(from: jsonItem))")
 		}
-		print("Tags--->>>",tg)
+	 tg = tags.joined(separator: ", ")
+	print("Tags--->>>",tg)
         self.tagsList.text = tg
         print(json)
 
@@ -161,17 +163,21 @@ class ViewController: UIViewController {
 	
 	func getQuantity(from item:JSON)->String{
 		var quant = ""
+        	var quants : [String] = []
 		item["Quant"].forEach { item in
-			quant += item.1.rawString()! + " "
+            		quants.append(item.1.rawString()!)
 		}
+        	quant = quants.joined(separator: " ")
 		return quant
 	}
 	
 	func getfood(from item:JSON)->String{
 		var food = ""
+       		var foods : [String] = []
 		item["Food"].forEach { item in
-			food += item.1.rawString()! + " "
+            		foods.append(item.1.rawString()!)
 		}
+        	food = foods.joined(separator: " ")
 		return food
 	}
     
